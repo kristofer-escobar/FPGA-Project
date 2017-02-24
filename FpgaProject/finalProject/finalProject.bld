@@ -6,7 +6,8 @@ ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2
 finalProject.ngc finalProject.ngd
 
 Reading NGO file
-"/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.ngc" ...
+"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.ngc"
+...
 Gathering constraint information from source properties...
 Done.
 
@@ -28,7 +29,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 109220 kilobytes
+Total memory usage is 109452 kilobytes
 
 Writing NGD file "finalProject.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec

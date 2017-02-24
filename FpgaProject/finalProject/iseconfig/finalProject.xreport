@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-24T14:07:44</DateModified>
+  <DateModified>2017-02-24T14:47:46</DateModified>
   <ModuleName>finalProject</ModuleName>
   <SummaryTimeStamp>2017-02-24T13:44:11</SummaryTimeStamp>
-  <SavedFilePath>/home/ubuntu-32/Desktop/FpgaProject/finalProject/iseconfig/finalProject.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ubuntu-32/Desktop/FpgaProject/finalProject</ImplementationReportsDirectory>
+  <SavedFilePath>/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/iseconfig/finalProject.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/</ImplementationReportsDirectory>
   <DateInitialized>2017-02-24T12:31:09</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

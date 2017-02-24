@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Fri Feb 24 13:43:56 2017
+Fri Feb 24 15:04:11 2017
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -158,7 +158,7 @@ P136|||GND||||||||||||
 P137||IOBS|IO_L4N_0|UNUSED||0|||||||||
 P138||IOBM|IO_L4P_0|UNUSED||0|||||||||
 P139||IOBS|IO_L3N_0|UNUSED||0|||||||||
-P140||IOBM|IO_L3P_0|UNUSED||0|||||||||
+P140|start|IOB|IO_L3P_0|INPUT|LVCMOS25*|0|||PULLDOWN|NONE||LOCATED|NO|NONE|
 P141||IOBS|IO_L2N_0|UNUSED||0|||||||||
 P142||IOBM|IO_L2P_0|UNUSED||0|||||||||
 P143||IOBS|IO_L1N_VREF_0|UNUSED||0|||||||||

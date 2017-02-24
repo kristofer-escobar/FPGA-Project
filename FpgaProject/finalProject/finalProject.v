@@ -26,7 +26,7 @@ module finalProject(
     );
 
 reg [25:0] prescaler = 0;
-reg led = 24'h000001;
+reg [23:0] led = 24'h000001;
 
 //States
 localparam RESET = 0, RUNNING = 1;
@@ -34,13 +34,13 @@ reg [0:0] state = RESET;
 
 wire s_start;
 debouncer d1(.CLK (CLK), .switch_input (start), .trans_dn (s_start));
-assign LED = (SEL & led);
 
 always @(posedge CLK)
 begin
+LED <= (SEL & led);
 	case (state)
 		RESET : begin
-			led = 1;
+			led <= 1;
 			if(s_start)
 			begin
 				state <= RUNNING;

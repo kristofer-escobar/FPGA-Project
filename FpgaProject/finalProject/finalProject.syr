@@ -108,30 +108,20 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.v" into library work
+Analyzing Verilog file "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" into library work
 Parsing module <finalProject>.
+ERROR:HDLCompiler:1660 - "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 40: Procedural assignment to a non-register LED is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:1660 - "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 40: Procedural assignment to a non-register LED is not permitted, left-hand side should be reg/integer/time/genvar
+ERROR:HDLCompiler:598 - "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 21: Module <finalProject> ignored due to previous errors.
 Parsing module <debouncer>.
-
-=========================================================================
-*                            HDL Elaboration                            *
-=========================================================================
-WARNING:HDLCompiler:1016 - "/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.v" Line 36: Port state is not connected to this instance
-
-Elaborating module <finalProject>.
-
-Elaborating module <debouncer>.
-WARNING:HDLCompiler:413 - "/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.v" Line 98: Result of 18-bit expression is truncated to fit in 17-bit target.
-WARNING:HDLCompiler:413 - "/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.v" Line 50: Result of 27-bit expression is truncated to fit in 26-bit target.
-ERROR:HDLCompiler:1511 - "/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.v" Line 29: Mix of blocking and non-blocking assignments to variable <led> is not a recommended coding practice.
-INFO - You can change the severity of this error message to warning using switch -change_error_to_warning "HDLCompiler:1511"
-Module finalProject remains a blackbox, due to errors in its contents
-WARNING:HDLCompiler:1499 - "/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.v" Line 21: Empty module <finalProject> remains a black box.
+ERROR:HDLCompiler:598 - "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 67: Module <debouncer> ignored due to previous errors.
+Verilog file /home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v ignored due to errors
 --> 
 
 
-Total memory usage is 101984 kilobytes
+Total memory usage is 101540 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
