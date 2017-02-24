@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.ncd
+OUTFILE=/home/ubuntu-32/Desktop/FpgaProject/finalProject/finalProject.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/ubuntu-32/Desktop/FpgaProject/finalProject
+LICENSE=WebPack
+USER_INFO=211277111_0_0_917

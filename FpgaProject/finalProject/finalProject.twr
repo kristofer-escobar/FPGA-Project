@@ -1,0 +1,383 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/trce -intstyle ise -v 3 -s 2 -n 3
+-fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr
+finalProject.pcf -ucf finalProjectMojo.ucf
+
+Design file:              finalProject.ncd
+Physical constraint file: finalProject.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |        10.753(R)|      SLOW  |         4.479(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<1>      |        10.887(R)|      SLOW  |         4.537(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<2>      |         9.813(R)|      SLOW  |         3.959(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<3>      |         9.812(R)|      SLOW  |         3.967(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<4>      |        10.228(R)|      SLOW  |         4.213(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<5>      |        10.143(R)|      SLOW  |         4.170(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<6>      |        10.429(R)|      SLOW  |         4.323(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<7>      |        10.607(R)|      SLOW  |         4.432(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<8>      |        10.911(R)|      SLOW  |         4.694(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<9>      |        10.702(R)|      SLOW  |         4.474(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<10>     |        10.945(R)|      SLOW  |         4.591(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<11>     |        11.187(R)|      SLOW  |         4.723(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<12>     |        11.486(R)|      SLOW  |         4.992(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<13>     |        11.301(R)|      SLOW  |         4.796(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<14>     |        12.481(R)|      SLOW  |         5.580(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<15>     |        11.770(R)|      SLOW  |         5.188(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<16>     |        11.913(R)|      SLOW  |         5.289(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<17>     |        12.312(R)|      SLOW  |         5.555(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<18>     |        11.997(R)|      SLOW  |         5.298(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<19>     |        12.261(R)|      SLOW  |         5.459(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<20>     |        12.614(R)|      SLOW  |         5.707(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<21>     |        12.633(R)|      SLOW  |         5.725(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<22>     |        12.576(R)|      SLOW  |         5.636(R)|      FAST  |CLK_BUFGP         |   0.000|
+LED<23>     |        13.090(R)|      SLOW  |         5.903(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SEL<0>         |LED<0>         |   11.358|
+SEL<0>         |LED<1>         |   11.492|
+SEL<0>         |LED<2>         |   10.418|
+SEL<0>         |LED<3>         |   10.417|
+SEL<0>         |LED<4>         |   10.833|
+SEL<0>         |LED<5>         |   10.748|
+SEL<0>         |LED<6>         |   11.034|
+SEL<0>         |LED<7>         |   11.212|
+SEL<0>         |LED<8>         |   11.516|
+SEL<0>         |LED<9>         |   11.307|
+SEL<0>         |LED<10>        |   11.550|
+SEL<0>         |LED<11>        |   11.792|
+SEL<0>         |LED<12>        |   12.091|
+SEL<0>         |LED<13>        |   11.906|
+SEL<0>         |LED<14>        |   13.086|
+SEL<0>         |LED<15>        |   12.375|
+SEL<0>         |LED<16>        |   12.518|
+SEL<0>         |LED<17>        |   12.917|
+SEL<0>         |LED<18>        |   12.602|
+SEL<0>         |LED<19>        |   12.866|
+SEL<0>         |LED<20>        |   13.219|
+SEL<0>         |LED<21>        |   13.238|
+SEL<0>         |LED<22>        |   13.181|
+SEL<0>         |LED<23>        |   13.695|
+SEL<1>         |LED<1>         |   11.810|
+SEL<1>         |LED<2>         |   10.804|
+SEL<1>         |LED<3>         |   10.803|
+SEL<1>         |LED<4>         |   11.218|
+SEL<1>         |LED<5>         |   11.133|
+SEL<1>         |LED<6>         |   11.419|
+SEL<1>         |LED<7>         |   11.597|
+SEL<1>         |LED<8>         |   11.901|
+SEL<1>         |LED<9>         |   11.692|
+SEL<1>         |LED<10>        |   11.935|
+SEL<1>         |LED<11>        |   12.177|
+SEL<1>         |LED<12>        |   12.476|
+SEL<1>         |LED<13>        |   12.291|
+SEL<1>         |LED<14>        |   13.471|
+SEL<1>         |LED<15>        |   12.760|
+SEL<1>         |LED<16>        |   12.903|
+SEL<1>         |LED<17>        |   13.302|
+SEL<1>         |LED<18>        |   12.987|
+SEL<1>         |LED<19>        |   13.251|
+SEL<1>         |LED<20>        |   13.604|
+SEL<1>         |LED<21>        |   13.623|
+SEL<1>         |LED<22>        |   13.566|
+SEL<1>         |LED<23>        |   14.080|
+SEL<2>         |LED<2>         |    9.985|
+SEL<2>         |LED<3>         |    9.977|
+SEL<2>         |LED<4>         |   10.420|
+SEL<2>         |LED<5>         |   10.335|
+SEL<2>         |LED<6>         |   10.621|
+SEL<2>         |LED<7>         |   10.799|
+SEL<2>         |LED<8>         |   11.103|
+SEL<2>         |LED<9>         |   10.894|
+SEL<2>         |LED<10>        |   11.137|
+SEL<2>         |LED<11>        |   11.379|
+SEL<2>         |LED<12>        |   11.678|
+SEL<2>         |LED<13>        |   11.493|
+SEL<2>         |LED<14>        |   12.673|
+SEL<2>         |LED<15>        |   11.962|
+SEL<2>         |LED<16>        |   12.105|
+SEL<2>         |LED<17>        |   12.504|
+SEL<2>         |LED<18>        |   12.189|
+SEL<2>         |LED<19>        |   12.453|
+SEL<2>         |LED<20>        |   12.806|
+SEL<2>         |LED<21>        |   12.825|
+SEL<2>         |LED<22>        |   12.768|
+SEL<2>         |LED<23>        |   13.282|
+SEL<3>         |LED<3>         |   10.296|
+SEL<3>         |LED<4>         |   10.751|
+SEL<3>         |LED<5>         |   10.666|
+SEL<3>         |LED<6>         |   10.952|
+SEL<3>         |LED<7>         |   11.130|
+SEL<3>         |LED<8>         |   11.434|
+SEL<3>         |LED<9>         |   11.225|
+SEL<3>         |LED<10>        |   11.468|
+SEL<3>         |LED<11>        |   11.710|
+SEL<3>         |LED<12>        |   12.009|
+SEL<3>         |LED<13>        |   11.824|
+SEL<3>         |LED<14>        |   13.004|
+SEL<3>         |LED<15>        |   12.293|
+SEL<3>         |LED<16>        |   12.436|
+SEL<3>         |LED<17>        |   12.835|
+SEL<3>         |LED<18>        |   12.520|
+SEL<3>         |LED<19>        |   12.784|
+SEL<3>         |LED<20>        |   13.137|
+SEL<3>         |LED<21>        |   13.156|
+SEL<3>         |LED<22>        |   13.099|
+SEL<3>         |LED<23>        |   13.613|
+SEL<4>         |LED<4>         |   10.785|
+SEL<4>         |LED<5>         |   10.703|
+SEL<4>         |LED<6>         |   11.094|
+SEL<4>         |LED<7>         |   11.303|
+SEL<4>         |LED<8>         |   11.610|
+SEL<4>         |LED<9>         |   11.401|
+SEL<4>         |LED<10>        |   11.644|
+SEL<4>         |LED<11>        |   11.886|
+SEL<4>         |LED<12>        |   12.185|
+SEL<4>         |LED<13>        |   12.000|
+SEL<4>         |LED<14>        |   13.180|
+SEL<4>         |LED<15>        |   12.469|
+SEL<4>         |LED<16>        |   12.612|
+SEL<4>         |LED<17>        |   13.011|
+SEL<4>         |LED<18>        |   12.696|
+SEL<4>         |LED<19>        |   12.960|
+SEL<4>         |LED<20>        |   13.313|
+SEL<4>         |LED<21>        |   13.332|
+SEL<4>         |LED<22>        |   13.275|
+SEL<4>         |LED<23>        |   13.789|
+SEL<5>         |LED<5>         |   10.560|
+SEL<5>         |LED<6>         |   11.019|
+SEL<5>         |LED<7>         |   11.228|
+SEL<5>         |LED<8>         |   11.534|
+SEL<5>         |LED<9>         |   11.325|
+SEL<5>         |LED<10>        |   11.568|
+SEL<5>         |LED<11>        |   11.810|
+SEL<5>         |LED<12>        |   12.109|
+SEL<5>         |LED<13>        |   11.924|
+SEL<5>         |LED<14>        |   13.104|
+SEL<5>         |LED<15>        |   12.393|
+SEL<5>         |LED<16>        |   12.536|
+SEL<5>         |LED<17>        |   12.935|
+SEL<5>         |LED<18>        |   12.620|
+SEL<5>         |LED<19>        |   12.884|
+SEL<5>         |LED<20>        |   13.237|
+SEL<5>         |LED<21>        |   13.256|
+SEL<5>         |LED<22>        |   13.199|
+SEL<5>         |LED<23>        |   13.713|
+SEL<6>         |LED<6>         |   10.459|
+SEL<6>         |LED<7>         |   10.661|
+SEL<6>         |LED<8>         |   10.995|
+SEL<6>         |LED<9>         |   10.786|
+SEL<6>         |LED<10>        |   11.029|
+SEL<6>         |LED<11>        |   11.271|
+SEL<6>         |LED<12>        |   11.570|
+SEL<6>         |LED<13>        |   11.385|
+SEL<6>         |LED<14>        |   12.565|
+SEL<6>         |LED<15>        |   11.854|
+SEL<6>         |LED<16>        |   11.997|
+SEL<6>         |LED<17>        |   12.396|
+SEL<6>         |LED<18>        |   12.081|
+SEL<6>         |LED<19>        |   12.345|
+SEL<6>         |LED<20>        |   12.698|
+SEL<6>         |LED<21>        |   12.717|
+SEL<6>         |LED<22>        |   12.660|
+SEL<6>         |LED<23>        |   13.174|
+SEL<7>         |LED<7>         |   10.363|
+SEL<7>         |LED<8>         |   10.709|
+SEL<7>         |LED<9>         |   10.500|
+SEL<7>         |LED<10>        |   10.743|
+SEL<7>         |LED<11>        |   10.985|
+SEL<7>         |LED<12>        |   11.284|
+SEL<7>         |LED<13>        |   11.099|
+SEL<7>         |LED<14>        |   12.279|
+SEL<7>         |LED<15>        |   11.568|
+SEL<7>         |LED<16>        |   11.711|
+SEL<7>         |LED<17>        |   12.110|
+SEL<7>         |LED<18>        |   11.795|
+SEL<7>         |LED<19>        |   12.059|
+SEL<7>         |LED<20>        |   12.412|
+SEL<7>         |LED<21>        |   12.431|
+SEL<7>         |LED<22>        |   12.374|
+SEL<7>         |LED<23>        |   12.888|
+SEL<8>         |LED<8>         |   11.420|
+SEL<8>         |LED<9>         |   11.214|
+SEL<8>         |LED<10>        |   11.562|
+SEL<8>         |LED<11>        |   11.835|
+SEL<8>         |LED<12>        |   12.137|
+SEL<8>         |LED<13>        |   11.952|
+SEL<8>         |LED<14>        |   13.132|
+SEL<8>         |LED<15>        |   12.421|
+SEL<8>         |LED<16>        |   12.564|
+SEL<8>         |LED<17>        |   12.963|
+SEL<8>         |LED<18>        |   12.648|
+SEL<8>         |LED<19>        |   12.912|
+SEL<8>         |LED<20>        |   13.265|
+SEL<8>         |LED<21>        |   13.284|
+SEL<8>         |LED<22>        |   13.227|
+SEL<8>         |LED<23>        |   13.741|
+SEL<9>         |LED<9>         |   10.756|
+SEL<9>         |LED<10>        |   11.172|
+SEL<9>         |LED<11>        |   11.445|
+SEL<9>         |LED<12>        |   11.746|
+SEL<9>         |LED<13>        |   11.561|
+SEL<9>         |LED<14>        |   12.741|
+SEL<9>         |LED<15>        |   12.030|
+SEL<9>         |LED<16>        |   12.173|
+SEL<9>         |LED<17>        |   12.572|
+SEL<9>         |LED<18>        |   12.257|
+SEL<9>         |LED<19>        |   12.521|
+SEL<9>         |LED<20>        |   12.874|
+SEL<9>         |LED<21>        |   12.893|
+SEL<9>         |LED<22>        |   12.836|
+SEL<9>         |LED<23>        |   13.350|
+SEL<10>        |LED<10>        |   10.810|
+SEL<10>        |LED<11>        |   11.076|
+SEL<10>        |LED<12>        |   11.405|
+SEL<10>        |LED<13>        |   11.220|
+SEL<10>        |LED<14>        |   12.400|
+SEL<10>        |LED<15>        |   11.689|
+SEL<10>        |LED<16>        |   11.832|
+SEL<10>        |LED<17>        |   12.231|
+SEL<10>        |LED<18>        |   11.916|
+SEL<10>        |LED<19>        |   12.180|
+SEL<10>        |LED<20>        |   12.533|
+SEL<10>        |LED<21>        |   12.552|
+SEL<10>        |LED<22>        |   12.495|
+SEL<10>        |LED<23>        |   13.009|
+SEL<11>        |LED<11>        |   10.738|
+SEL<11>        |LED<12>        |   11.079|
+SEL<11>        |LED<13>        |   10.894|
+SEL<11>        |LED<14>        |   12.074|
+SEL<11>        |LED<15>        |   11.363|
+SEL<11>        |LED<16>        |   11.506|
+SEL<11>        |LED<17>        |   11.905|
+SEL<11>        |LED<18>        |   11.590|
+SEL<11>        |LED<19>        |   11.854|
+SEL<11>        |LED<20>        |   12.207|
+SEL<11>        |LED<21>        |   12.226|
+SEL<11>        |LED<22>        |   12.169|
+SEL<11>        |LED<23>        |   12.683|
+SEL<12>        |LED<12>        |   10.820|
+SEL<12>        |LED<13>        |   10.638|
+SEL<12>        |LED<14>        |   11.923|
+SEL<12>        |LED<15>        |   11.243|
+SEL<12>        |LED<16>        |   11.389|
+SEL<12>        |LED<17>        |   11.788|
+SEL<12>        |LED<18>        |   11.473|
+SEL<12>        |LED<19>        |   11.737|
+SEL<12>        |LED<20>        |   12.090|
+SEL<12>        |LED<21>        |   12.109|
+SEL<12>        |LED<22>        |   12.052|
+SEL<12>        |LED<23>        |   12.566|
+SEL<13>        |LED<13>        |   10.411|
+SEL<13>        |LED<14>        |   11.764|
+SEL<13>        |LED<15>        |   11.084|
+SEL<13>        |LED<16>        |   11.229|
+SEL<13>        |LED<17>        |   11.628|
+SEL<13>        |LED<18>        |   11.313|
+SEL<13>        |LED<19>        |   11.577|
+SEL<13>        |LED<20>        |   11.930|
+SEL<13>        |LED<21>        |   11.949|
+SEL<13>        |LED<22>        |   11.892|
+SEL<13>        |LED<23>        |   12.406|
+SEL<14>        |LED<14>        |   11.756|
+SEL<14>        |LED<15>        |   11.069|
+SEL<14>        |LED<16>        |   11.242|
+SEL<14>        |LED<17>        |   11.641|
+SEL<14>        |LED<18>        |   11.326|
+SEL<14>        |LED<19>        |   11.590|
+SEL<14>        |LED<20>        |   11.943|
+SEL<14>        |LED<21>        |   11.962|
+SEL<14>        |LED<22>        |   11.905|
+SEL<14>        |LED<23>        |   12.419|
+SEL<15>        |LED<15>        |   10.746|
+SEL<15>        |LED<16>        |   10.931|
+SEL<15>        |LED<17>        |   11.330|
+SEL<15>        |LED<18>        |   11.015|
+SEL<15>        |LED<19>        |   11.279|
+SEL<15>        |LED<20>        |   11.632|
+SEL<15>        |LED<21>        |   11.651|
+SEL<15>        |LED<22>        |   11.594|
+SEL<15>        |LED<23>        |   12.108|
+SEL<16>        |LED<16>        |   11.500|
+SEL<16>        |LED<17>        |   11.902|
+SEL<16>        |LED<18>        |   11.692|
+SEL<16>        |LED<19>        |   11.987|
+SEL<16>        |LED<20>        |   12.343|
+SEL<16>        |LED<21>        |   12.362|
+SEL<16>        |LED<22>        |   12.305|
+SEL<16>        |LED<23>        |   12.819|
+SEL<17>        |LED<17>        |   11.324|
+SEL<17>        |LED<18>        |   11.182|
+SEL<17>        |LED<19>        |   11.477|
+SEL<17>        |LED<20>        |   11.832|
+SEL<17>        |LED<21>        |   11.851|
+SEL<17>        |LED<22>        |   11.794|
+SEL<17>        |LED<23>        |   12.308|
+SEL<18>        |LED<18>        |   12.847|
+SEL<18>        |LED<19>        |   13.135|
+SEL<18>        |LED<20>        |   13.518|
+SEL<18>        |LED<21>        |   13.537|
+SEL<18>        |LED<22>        |   13.480|
+SEL<18>        |LED<23>        |   13.994|
+SEL<19>        |LED<19>        |   12.819|
+SEL<19>        |LED<20>        |   13.214|
+SEL<19>        |LED<21>        |   13.233|
+SEL<19>        |LED<22>        |   13.176|
+SEL<19>        |LED<23>        |   13.690|
+SEL<20>        |LED<20>        |   13.100|
+SEL<20>        |LED<21>        |   13.122|
+SEL<20>        |LED<22>        |   13.170|
+SEL<20>        |LED<23>        |   13.715|
+SEL<21>        |LED<21>        |   13.056|
+SEL<21>        |LED<22>        |   13.172|
+SEL<21>        |LED<23>        |   13.717|
+SEL<22>        |LED<22>        |   13.307|
+SEL<22>        |LED<23>        |   13.845|
+SEL<23>        |LED<23>        |   13.458|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Feb 24 13:44:02 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 136 MB
+
+
+
