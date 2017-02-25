@@ -26,37 +26,90 @@ module finalProject(
     );
 
 reg [25:0] prescaler = 0;
-reg [23:0] led = 24'h000001;
-
+reg [23:0] led = 24'h000800;
+reg [23:0] leds = 0;
 //States
-localparam RESET = 0, RUNNING = 1;
-reg [0:0] state = RESET;
+localparam PAUSE = 0, LRUNNING = 1, RRUNNING = 2;
+reg [1:0] state = PAUSE;
 
+reg [0:0] lastState = 0;
 wire s_start;
 debouncer d1(.CLK (CLK), .switch_input (start), .trans_dn (s_start));
 
+assign LED = leds;// (SEL | led);
 always @(posedge CLK)
 begin
-LED <= (SEL & led);
+leds <= (SEL | led);
+
 	case (state)
-		RESET : begin
-			led <= 1;
+		PAUSE : begin
+			//led <= 1;
 			if(s_start)
 			begin
-				state <= RUNNING;
+				if(lastState)
+				begin
+					state <= RRUNNING;
+				end
+				else
+				begin
+					state <= LRUNNING;
+				end
 			end
 		end
-		RUNNING : begin		
+		LRUNNING : begin		
 			prescaler <= prescaler + 1;
-			if(prescaler == 26'd49999999)
+			if(prescaler == 26'd4999999)
 			begin
 				prescaler <= 0;
-				led <= led<<1;
+				if(led==24'h800000)
+				begin
+					state <= RRUNNING;
+				end
+				else 
+				begin
+					if((led<<1) & leds)
+					begin
+						state <= RRUNNING;				
+					end	
+					else
+					begin
+						led <= led<<1;
+					end
+				end
 			end
 			
 			if(s_start)
 			begin
-				state <= RESET;
+				lastState <= 0;
+				state <= PAUSE;
+			end
+		end
+		RRUNNING : begin		
+			prescaler <= prescaler + 1;
+			if(prescaler == 26'd4999999)
+			begin
+				prescaler <= 0;
+				if(led==24'h000001)
+				begin
+					state <= LRUNNING;
+				end
+				else 
+				begin
+					if((led>>1) & leds)
+					begin
+						state <= LRUNNING;				
+					end	
+					else
+					begin
+						led <= led>>1;
+					end
+				end
+			end
+			
+			if(s_start)
+			begin
+				lastState <= 1;
+				state <= PAUSE;
 			end
 		end
 	endcase

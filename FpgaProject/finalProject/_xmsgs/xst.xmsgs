@@ -5,16 +5,31 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="1660" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 40: Procedural assignment to a non-register <arg fmt="%s" index="1">LED</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 37: Port <arg fmt="%s" index="1">state</arg> is not connected to this instance
 </msg>
 
-<msg type="error" file="HDLCompiler" num="1660" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 40: Procedural assignment to a non-register <arg fmt="%s" index="1">LED</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 151: Result of <arg fmt="%d" index="1">18</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">17</arg>-bit target.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="598" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 21: Module &lt;<arg fmt="%s" index="1">finalProject</arg>&gt; ignored due to previous errors.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 60: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="598" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 67: Module &lt;<arg fmt="%s" index="1">debouncer</arg>&gt; ignored due to previous errors.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v" Line 88: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">state</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">d1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">trans_up</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">d1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">prescaler_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">finalProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prescaler_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">finalProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">prescaler_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">finalProject</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
 </messages>

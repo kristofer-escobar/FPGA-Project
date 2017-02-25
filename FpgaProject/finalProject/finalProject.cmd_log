@@ -42,3 +42,62 @@ trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.
 bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
 xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
 xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
+xst -intstyle ise -ifn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.xst" -ofn "/home/ubuntu-32/Desktop/FPGA-Project/FpgaProject/finalProject/finalProject.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc finalProjectMojo.ucf -p xc6slx9-tqg144-2 finalProject.ngc finalProject.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o finalProject_map.ncd finalProject.ngd finalProject.pcf 
+par -w -intstyle ise -ol high -mt off finalProject_map.ncd finalProject.ncd finalProject.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml finalProject.twx finalProject.ncd -o finalProject.twr finalProject.pcf -ucf finalProjectMojo.ucf 
+bitgen -intstyle ise -f finalProject.ut finalProject.ncd 
